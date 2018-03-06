@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/qrfragback2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/cross"
+        android:scaleType="fitCenter"
+        android:background="@android:color/white"
+        android:layout_centerInParent="true" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="72px"
+        android:layout_marginLeft="72px"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/ticket"
+        android:backgroundTint="#eaeaea">
+
+
+<RelativeLayout
+    android:id="@+id/rl_redmpt1"
+
+
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_inner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/qrcode2"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/iv_expired"
+            android:layout_toEndOf="@+id/iv_expired"
+            android:background="@android:color/white"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" />
+
+        <ImageView
+            android:id="@+id/barcode2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/qrcode2"
+            android:background="#e4e0e0"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_expired"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/expired"
+            android:visibility="gone" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone">
+
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_1111"
+            android:textSize="13sp"
+            android:layout_marginTop="35dp"
+            android:text="@string/redemption_ticket_text11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_inner"/>
+
+    <TextView
+        android:id="@+id/tv_1112"
+        android:textSize="14sp"
+        android:text="                      redemption completed."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/tv_1111"
+          />
+
+</RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_redmpt2"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:src="@drawable/q111"
+                android:id="@+id/iv_logo"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+               />
+            <TextView
+                android:id="@+id/tv_top1"
+                android:text="ABC Shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_logo"/>
+            <TextView
+                android:id="@+id/tv_1113"
+                android:textSize="22sp"
+                android:text="@string/redemption_ticket_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_top1"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+</LinearLayout>
